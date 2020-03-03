@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Evgeniy10/housing-renovation/issues"
   },
-  "homepage": "https://github.com/Evgeniy10/housing-renovation#readme"
+  "homepage": "https://github.com/Evgeniy10/housing-renovation#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
