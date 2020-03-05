@@ -317,15 +317,16 @@ template {
 [hidden] {
   display: none; }
 
-.button {
-  padding: 13px 20px;
+.button {  
   border: none;
   border-radius: 2px;
   text-transform: uppercase; }
   .button--primary {
+    padding: 13px 20px;
     background-color: #E3B873;
     color: #fff; }
   .button--outline {
+    padding: 12px 20px;
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff; }
@@ -403,7 +404,9 @@ template {
   padding-top: 100px;
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
-  color: #fff; }
+  color: #fff;
+  padding: 18px 26px;
+  padding: 19px 26px 19px 26px; }
   .hero__content {
     max-width: 670px; }
   .hero__text {
@@ -416,19 +419,13 @@ template {
     font-size: 13px;
     line-height: 15px;
     margin-right: 20px; }
-
-.button--outline {
-  padding: 18px 26px 18px 26px; }
-
-.button--primary {
-  padding: 19px 26px 19px 26px; }
-  .button--primary__instagram {
+  .hero__instagram {
     position: absolute;
     left: 0;
     top: 0;
     max-width: 80px;
     height: 100vh; }
-  .button--primary__scroll-down {
+  .hero__scroll-down {
     position: absolute;
     left: 0%;
     bottom: 0%;
