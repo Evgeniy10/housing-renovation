@@ -416,13 +416,19 @@ template {
     font-size: 13px;
     line-height: 15px;
     margin-right: 20px; }
-  .hero__instagram {
+
+.button--outline {
+  padding: 18px 26px 18px 26px; }
+
+.button--primary {
+  padding: 19px 26px 19px 26px; }
+  .button--primary__instagram {
     position: absolute;
     left: 0;
     top: 0;
     max-width: 80px;
     height: 100vh; }
-  .hero__scroll-down {
+  .button--primary__scroll-down {
     position: absolute;
     left: 0%;
     bottom: 0%;
@@ -430,6 +436,7 @@ template {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Yeseva One';
     background-color: #131313;
     text-transform: uppercase;
     color: #fff;
