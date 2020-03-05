@@ -13,7 +13,12 @@
   &__text
     font-size: 22px
     max-width: 500px
+    line-height: 30px;
   &__button
+    font-family: 'Futura Demi';    
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
     margin-right: 20px
   &__instagram
     position: absolute
@@ -23,13 +28,13 @@
     height: 100vh
   &__scroll-down
     position: absolute
+    left: 0%
+    bottom: 0%       
+    padding: 40px 90px 40px 48px
     display: flex
     align-items: center
-    justify-content: center
-    left: 0
-    bottom: 0
-    min-widht: 247px
-    min-height: 97px
+    justify-content: center    
+    
     background-color: $dark
     text-transform: uppercase
     color: $light
@@ -41,7 +46,9 @@
   align-items: center
   background-color: $dark
   &__link
-
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Futura Demi';
     // display: inline-block
     text-transform: uppercase
     text-decoration: none
@@ -53,5 +60,8 @@
   font-family: 'Yeseva One', cursive
   text-transform: uppercase
   font-size: 40px
+  font-style: normal;
+  font-weight: normal;
+  line-height: 53px;
   &--primary
     color: $primary
