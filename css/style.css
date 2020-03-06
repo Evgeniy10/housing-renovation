@@ -6,7 +6,7 @@
   font-display: wrap; }
 
 @font-face {
-  font-family: 'Futura Demi';
+  font-family: 'Futura DemiC';
   src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -378,6 +378,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  .menu__logo {
+    font-family: 'Futura DemiC'; }
 
 .logo {
   color: #E3B873;
@@ -396,7 +398,9 @@ body {
   color: #E3B873; }
 
 .contacts__phone {
-  margin-right: 45px; }
+  margin-right: 45px;
+  font-family: 'Futura DemiC';
+  font-weight: 500; }
 
 .contacts__contacts__phone {
   font-style: normal;
@@ -405,7 +409,7 @@ body {
   line-height: 16px; }
 
 .button {
-  font-family: 'Futura Demi';
+  font-family: 'Futura DemiC';
   font-size: 13px;
   line-height: 15px; }
 
@@ -435,7 +439,7 @@ body {
     max-width: 500px;
     line-height: 30px; }
   .hero__button {
-    font-family: 'Futura Demi';
+    font-family: 'Futura DemiC';
     font-weight: 500;
     font-size: 13px;
     line-height: 15px;
@@ -486,7 +490,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Futura Demi';
+    font-family: 'Futura DemiC';
     line-height: 16px;
     font-size: 14px;
     text-transform: uppercase;
