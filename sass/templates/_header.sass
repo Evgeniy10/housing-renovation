@@ -12,8 +12,9 @@
   display: flex
   justify-content: space-between
   align-items: center
-  &__logo
+  &__logo 
     font-family: 'Futura Demi';
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -23,7 +24,11 @@
   text-transform: uppercase
 
 .nav
-  &__item
+  &__item    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
     text-decoration: none
     color: $light
     text-transform: uppercase
@@ -36,8 +41,16 @@
 
 .contacts
   &__phone
-    margin-right: 45px
     font-family: 'Futura Demi';
+    margin-right: 45px
+  &__contacts__phone    
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+
+.button 
+  font-family: 'Futura Demi';
+  font-size: 13px;
+  line-height: 15px;
+
