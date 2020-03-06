@@ -20,8 +20,7 @@
     font-size: 13px;
     line-height: 15px;
     margin-right: 20px    
-  &--outline
-  // padding: 18px 26px 18px 26px
+  &--outline  
     padding: 18px 26px
   &--primary
     padding: 19px 26px 19px 26px
@@ -50,6 +49,19 @@
     text-transform: uppercase
     color: $light
     text-decoration: none
+    &::after
+      content: '' 
+      width: 30px
+      height: 30px 
+      border: 2px solid $primary
+      border-radius: 50%
+      margin-left: 12px
+      // background: url('./img/arrow-down.svg') no-repeat center
+      background: url('img\vector.png') no-repeat center
+      // '../img/hero-bg.jpg'
+        
+      
+      
 
 .instagram
   display: flex
@@ -57,6 +69,9 @@
   align-items: center
   background-color: $dark
   &__link
+    display: flex
+    justify-content: center
+    align-items: center
     font-family: 'Futura Demi';
     line-height: 16px;
     font-size: 14px;     
@@ -64,6 +79,14 @@
     text-decoration: none
     color: $primary
     transform: rotate(90deg)
+    line-height: 0.8    
+    &::after
+      content: '' 
+      width: 50px
+      height: 1px 
+      background-color: $primary 
+      margin-left: 8px
+      
 
 .title
   margin: 0
