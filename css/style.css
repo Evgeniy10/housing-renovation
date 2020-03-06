@@ -317,16 +317,15 @@ template {
 [hidden] {
   display: none; }
 
-.button {  
+.button {
+  /* padding: 13px 20px; */
   border: none;
   border-radius: 2px;
   text-transform: uppercase; }
   .button--primary {
-    padding: 13px 20px;
     background-color: #E3B873;
     color: #fff; }
   .button--outline {
-    padding: 12px 20px;
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff; }
@@ -404,21 +403,13 @@ template {
   padding-top: 100px;
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
-  color: #fff;
-  padding: 18px 26px;
-  padding: 19px 26px 19px 26px; }
+  color: #fff; }
   .hero__content {
     max-width: 670px; }
   .hero__text {
     font-size: 22px;
     max-width: 500px;
     line-height: 30px; }
-  .hero__button {
-    font-family: 'Futura Demi';
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 15px;
-    margin-right: 20px; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -463,6 +454,15 @@ template {
   line-height: 53px; }
   .title--primary {
     color: #E3B873; }
+
+.button {
+  font-family: 'Futura Demi';
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  margin-right: 20px;
+  padding: 17px 26px;
+  padding: 19px 26px 19px 26px; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
