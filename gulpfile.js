@@ -18,7 +18,7 @@ function bs() {
   });
   watch("./*.html").on('change', browserSync.reload);
   watch("./sass/**/*.sass", serveSass); // отслеживать все файлы, и в подпапках /**/тоже   
-  watch("./sass/**/*.scss", serveSass); // отслеживать все файлы, и в подпапках /**/тоже   
+  watch("./scss/**/*.scss", serveSass); // отслеживать все файлы, и в подпапках /**/тоже   
   watch("./js/*.js").on('change', browserSync.reload);
 };
 
