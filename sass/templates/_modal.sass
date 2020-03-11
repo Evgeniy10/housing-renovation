@@ -1,4 +1,6 @@
 .modal
+  opacity: 0
+  visibility: hidden  //скрыть со страницы
   position: fixed
   z-index: 199
   left: 0
@@ -10,7 +12,10 @@
   background-color: rgba($dark, 0.6)
   display: flex
   align-items: center
-  justify-content: center  
+  justify-content: center
+  &--visible
+    opacity: 0
+    visibility: visible
   &__dialog
     position: relative
     max-width: 36.36rem
