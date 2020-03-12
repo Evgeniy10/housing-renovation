@@ -17,6 +17,11 @@
 
 
 
+// Выше - рабочий код JS  из 20 задания
+// Ниже - тот же код на jQuery из 21 задания 
+
+
+
 $(document).ready(function () {
   var modal = $('.modal'),
     modalBtn = $('[data-toggle=modal]'),
