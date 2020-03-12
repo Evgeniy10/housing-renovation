@@ -645,7 +645,7 @@ img {
   align-items: center;
   justify-content: center; }
   .modal--visible {
-    opacity: 0;
+    opacity: 1;
     visibility: visible; }
   .modal__dialog {
     position: relative;
