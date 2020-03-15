@@ -783,15 +783,34 @@ p {
 
 @media screen and (max-width: 799px) {
   .row {
+    display: flex;
     flex-direction: column;
     align-items: center; }
+  .hero::after {
+    display: none; }
   .types__card {
     margin-bottom: 5rem; }
   .card__text {
     margin-left: 0; }
   .card__pricetag {
     padding: 1.1rem 2.76rem;
-    font-size: 1.28rem; } }
+    font-size: 1.28rem; }
+  .section-title__word::after {
+    display: none; }
+  .col-50__image {
+    margin-top: 2.5rem; }
+  .col-50 {
+    width: 95%; }
+  .col__50 {
+    min-width: 90%; } }
+
+@media screen and (max-width: 767px) {
+  .col-50 {
+    width: 90%; }
+  .col__50 {
+    min-width: 85%; }
+  .section-title__heading--primary {
+    font-size: 1.6rem; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -812,6 +831,8 @@ p {
   .title {
     font-size: 2rem;
     margin-top: 30px; }
+  .hero__content {
+    margin: auto; }
   .hero__scroll-down {
     display: none; }
   .hero__content {
@@ -822,10 +843,16 @@ p {
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .col-50 {
+    width: 100%; }
+  .col__50 {
+    min-width: 95%; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
+    display: none; }
+  .hero::after {
     display: none; } }
 
 @media screen and (max-width: 376px) {
@@ -840,13 +867,30 @@ p {
     margin-top: 10px; }
   .hero__content {
     max-width: 22rem; }
+  .hero__title {
+    font-size: 2.0rem; }
   .hero__text {
-    font-size: 1.29rem;
+    font-size: 1.25rem;
     margin-top: 1.5rem;
     margin-bottom: 2.28rem; }
   .hero__button {
     display: block;
-    min-width: 22rem;
+    min-width: 22.9rem;
+    margin-bottom: 1.85rem; } }
+
+@media screen and (max-width: 363px) {
+  .hero__content {
+    margin: auto;
+    max-width: 20rem; }
+  .hero__title {
+    font-size: 1.8rem; }
+  .hero__text {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.28rem; }
+  .hero__button {
+    display: block;
+    min-width: 21.0rem;
     margin-bottom: 1.85rem; } }
 
 @media screen and (max-width: 360px) {
@@ -860,18 +904,20 @@ p {
     font-size: 1.9rem;
     margin-top: 10px; }
   .hero__content {
-    max-width: 26rem; }
+    margin: auto;
+    max-width: 20rem; }
+  .hero__title {
+    font-size: 1.8rem; }
   .hero__text {
-    font-size: 1.29rem;
+    font-size: 1.25rem;
     margin-top: 1.5rem;
     margin-bottom: 2.28rem; }
   .hero__button {
     display: block;
-    max-width: 25rem;
-    margin-right: 0;
+    min-width: 21.0rem;
     margin-bottom: 1.85rem; } }
 
-@media screen and (max-width: 344px) {
+@media screen and (max-width: 345px) {
   .menu {
     display: inline-blok; }
   .logo {
@@ -883,15 +929,17 @@ p {
     font-size: 1.8rem;
     margin-top: 10px; }
   .hero__content {
-    max-width: 22rem;
-    margin: 0 auto; }
+    margin: auto;
+    max-width: 20rem; }
+  .hero__title {
+    font-size: 1.8rem; }
   .hero__text {
-    font-size: 1.29rem;
+    font-size: 1.25rem;
     margin-top: 1.5rem;
     margin-bottom: 2.28rem; }
   .hero__button {
     display: block;
-    min-width: 22rem;
+    min-width: 20.9rem;
     margin-bottom: 1.85rem; } }
 
 @media screen and (max-width: 340px) {
@@ -902,18 +950,45 @@ p {
   .phone {
     margin-left: 2.0rem; } }
 
-@media screen and (max-width: 326px) {
+@media screen and (max-width: 330px) {
   .menu {
     display: inline-blok; }
   .logo {
     margin-right: 1.7rem; }
   .phone {
-    margin-left: 1.7rem; } }
+    margin-left: 1.7rem; }
+  .hero__content {
+    margin: auto;
+    max-width: 19.8rem; }
+  .hero__title {
+    font-size: 1.8rem; }
+  .hero__text {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.28rem; }
+  .hero__button {
+    display: block;
+    min-width: 20.6rem;
+    margin-bottom: 1.85rem; } }
 
-@media screen and (max-width: 315px) {
+@media screen and (max-width: 325px) {
   .menu {
     display: inline-blok; }
   .logo {
     margin-right: 1.5rem; }
   .phone {
-    margin-left: 1.5rem; } }
+    margin-left: 1.5rem; }
+  .hero__content {
+    margin: auto;
+    max-width: 22rem; }
+  .hero__title {
+    font-size: 1.69rem;
+    line-height: 125%; }
+  .hero__text {
+    font-size: 1.15rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.28rem; }
+  .hero__button {
+    display: block;
+    min-width: 20.1rem;
+    margin-bottom: 1.85rem; } }
