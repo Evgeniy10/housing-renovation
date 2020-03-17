@@ -504,7 +504,7 @@ p {
   justify-content: center;
   align-items: flex-start;
   padding-top: 100px;
-  background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
+  background: #131313 url("/img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #fff; }
   .hero::before {
@@ -563,7 +563,7 @@ p {
       border: 1px solid #E3B873;
       border-radius: 50%;
       margin-left: 14px;
-      background: url("/img/vector.png") no-repeat center; }
+      background: url("/img/arrow-down.svg") no-repeat center; }
 
 .instagram {
   display: flex;
@@ -618,7 +618,7 @@ p {
   flex-wrap: wrap; }
   .swiper-slide__text {
     flex-basis: 50%;
-    margin-bottom: 2.42rem;
+    margin-bottom: 2.0rem;
     padding-bottom: 2rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
@@ -710,6 +710,13 @@ p {
   color: #363636;
   text-transform: none; }
 
+.background-black {
+  background-color: #131313;
+  width: 100%;
+  height: 550px;
+  z-index: -1;
+  margin-top: -425px; }
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -798,7 +805,7 @@ p {
   .section-title__word::after {
     display: none; }
   .col-50__image {
-    margin-top: 2.5rem; }
+    margin-top: 1.5rem; }
   .col-50 {
     width: 95%; }
   .col__50 {
@@ -806,11 +813,27 @@ p {
 
 @media screen and (max-width: 767px) {
   .col-50 {
-    width: 90%; }
+    width: 100%; }
   .col__50 {
     min-width: 85%; }
   .section-title__heading--primary {
-    font-size: 1.6rem; } }
+    font-size: 1.6rem; }
+  .swiper-slide__text {
+    margin-bottom: 1.8rem;
+    padding-bottom: 1.1rem; }
+  .swiper-slide__heading {
+    font-size: 1rem;
+    line-height: 1.0rem;
+    margin-bottom: 0.69rem; }
+  .slide--value-bottom:only-child {
+    margin-bottom: 3rem; }
+  .section--disign {
+    background-color: #131313;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+  .types__section-title h2, .types h3 {
+    color: #fff; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -843,11 +866,7 @@ p {
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; }
-  .col-50 {
-    width: 100%; }
-  .col__50 {
-    min-width: 95%; } }
+    margin-bottom: 1.85rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
@@ -876,7 +895,11 @@ p {
   .hero__button {
     display: block;
     min-width: 22.9rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .col-50__image {
+    min-width: 90%; }
+  .swiper-slide__heading {
+    font-size: 1rem; } }
 
 @media screen and (max-width: 363px) {
   .hero__content {

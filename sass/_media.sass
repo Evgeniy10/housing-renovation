@@ -61,21 +61,43 @@
       display: none 
   .col-50
     &__image
-      margin-top: 2.5rem
+      margin-top: 1.5rem      
   .col
     &-50
       width: 95%             
   .col__50
-      min-width: 90%       
+    min-width: 90%
 
 @media screen and ( max-width: 767px )   
   .col
     &-50
-      width: 90%             
+      width: 100%                  
   .col__50
-      min-width: 85%
+    min-width: 85%
+
   .section-title__heading--primary
-    font-size: 1.6rem    
+    font-size: 1.6rem  
+
+  .swiper-slide       
+    &__text
+      margin-bottom: 1.8rem
+      padding-bottom: 1.1rem      
+    &__heading
+      font-size: 1rem
+      line-height: 1.0rem      
+      margin-bottom: 0.69rem 
+  .slide--value-bottom:only-child 
+    margin-bottom: 3rem      
+
+  .section--disign
+    background-color: $dark    
+    width: 100%
+    height: 100%
+    z-index: -1
+
+  .types
+    &__section-title h2, h3
+      color: #fff               
             
 
 @media screen and ( max-width: 760px )
@@ -118,11 +140,11 @@
       display: block
       min-width: 22.86rem
       margin-bottom: 1.85rem
-  .col
-    &-50
-      width: 100%             
-  .col__50
-      min-width: 95%     
+  // .col
+  //   &-50
+  //     width: 95%             
+  // .col__50
+  //     min-width: 85%        
 
 @media screen and ( max-height: 520px )
   .hero
@@ -158,10 +180,17 @@
     &__button
       display: block
       min-width: 22.9rem
-      margin-bottom: 1.85rem       
+      margin-bottom: 1.85rem   
+
+  .col-50__image
+    min-width: 90%    
+   
+  .swiper-slide__heading
+    font-size: 1rem   
+              
 
 @media screen and ( max-width: 363px )          
-   .hero    
+  .hero
     &__content   
       margin: auto   
       max-width: 20rem 
