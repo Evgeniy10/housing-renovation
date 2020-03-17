@@ -897,7 +897,7 @@ p {
     margin-bottom: 0.69rem; }
   .slide--value-bottom:only-child {
     margin-bottom: 3rem; }
-  .section--disign {
+  .section--black {
     background-color: #131313;
     width: 100%;
     height: 100%;
@@ -945,6 +945,8 @@ p {
     display: none; } }
 
 @media screen and (max-width: 376px) {
+  .container {
+    width: 90%; }
   .menu {
     display: inline-blok; }
   .logo {
@@ -969,7 +971,58 @@ p {
   .col-50__image {
     min-width: 90%; }
   .swiper-slide__heading {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .control__section-title h2 {
+    font-size: 1.572rem; }
+  .control__video {
+    margin-bottom: 2rem;
+    max-width: 58.357rem;
+    min-height: 14rem; }
+    .control__video::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8); }
+  .control__text {
+    max-width: 40.785rem;
+    margin: auto;
+    margin-bottom: 1.857rem;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.72rem;
+    color: #fff; }
+    .control__text::before {
+      content: '';
+      display: block;
+      margin: auto;
+      margin-bottom: 1.5rem;
+      width: 55px;
+      height: 2px;
+      background-color: #E3B873;
+      border-radius: 30px; }
+  .control__form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 55rem;
+    margin: auto; }
+  .control__input-group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%; }
+  .control__label {
+    margin-bottom: -7px; }
+  .control__button {
+    padding: 1.285rem 4.785rem; }
+  .control__policy {
+    flex-basis: 100%;
+    margin-top: 1.2rem; }
+    .control__policy--label {
+      justify-content: center; }
+  .video__play {
+    position: relative;
+    margin: auto; } }
 
 @media screen and (max-width: 363px) {
   .hero__content {
