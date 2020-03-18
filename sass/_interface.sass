@@ -48,7 +48,8 @@
           background: $primary url('../img/arrow.svg') no-repeat center / 0.8rem
   &__label 
     display: flex
-    align-items: center  
+    align-items: center 
+    font-size: 1.142rem 
     &::before
       content: ''
       width: 18px
@@ -57,6 +58,18 @@
       border-radius: 1px
       cursor: pointer
       margin-right: 0.64rem
+    &--center
+      justify-content: center
+label  //цвет ошибки в форме
+  &.invalid
+    color: tomato
+input //цвет подчёркивания ошибки в форме
+  &.invalid
+    border: 1px solid tomato  
+
+
+
+
     
     
 
