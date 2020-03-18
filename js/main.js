@@ -70,7 +70,7 @@ $(document).ready(function () {
     }, // сообщения
     messages: { //для русского языка
       userName: {
-        required: "Имя обязательно",
+        required: "Заполните поле",
         minlength: "Имя не короче двух букв", // имя не менее 2 букв
       },
       userPhone: "Номер телефона обязателен",      
@@ -101,7 +101,7 @@ $(document).ready(function () {
     }, // сообщения
     messages: { //для русского языка
       userName: {
-        required: "Имя обязательно",
+        required: "Заполните поле",
         minlength: "Имя не короче двух букв", // имя не менее 2 букв
       },
       userPhone: "Номер телефона обязателен",
@@ -131,17 +131,17 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
-      }
+      }  
     }, // сообщения
     messages: { //для русского языка
       userName: {
-        required: "Имя обязательно",
+        required: "Заполните поле",
         minlength: "Имя не короче двух букв", // имя не менее 2 букв
       },
       userPhone: "Номер телефона обязателен",
       userEmail: {
-        required: "Обязательно укажите email",
-        email: "Введите в формате name@domain.com"
+        required: "Укажите email",
+        email: "Введите корректный email"  //Введите в формате name@domain.com
       }
     }
   });
