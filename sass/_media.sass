@@ -10,10 +10,8 @@
     &__text
       // position: relative  //текст заезжает на img
       margin: 0 auto
-      margin-top: -6.3rem     //текст заезжает на img 
-  
+      margin-top: -6.3rem     //текст заезжает на img  
          
-
           
 @media screen and ( max-width: 992px )
   .nav
@@ -152,15 +150,13 @@
     &__input-group
       display: flex
       justify-content: space-between
-      flex-direction: column  
-      // flex-basis: 30%
+      flex-direction: column       
       width: 100%      
       
     &__label
       margin-bottom: -7px
       color: rgba(255, 255, 255, 0.5);
-      font-size: 15px
-    &__input        
+      font-size: 15px            
 
     &__button         
       padding: 1.285rem 4.785rem
@@ -171,7 +167,8 @@
     &__policy
       flex-basis: 100%        
       color: $light
-      margin-left: -50px
+      margin-left: -25px
+      // margin: auto
       margin-top: 7px
       order: 1
       &--label
@@ -190,18 +187,15 @@
   .video
     &__play
       position: relative  
-      margin: auto      // для выравнивания кнопки
-    // ::placeholder      
-    //   color: $light
-    //   font-size: 1.285rem
+      margin: auto      // для выравнивания кнопки    
   input[type="text"]::placeholder
-   color: $light  
-   font-size: 18px
-   margin-top: 7px
+      color: $light
+      font-size: 18px
+      margin-top: 7px
   input[type="tel"]::placeholder
-   color: $light 
-   font-size: 18px
-   margin-top: 7px    
+      color: $light
+      font-size: 18px
+      margin-top: 7px
       
 
 @media screen and ( max-width: 576px )
@@ -277,7 +271,38 @@
   .swiper-slide__heading
     font-size: 1rem 
 
-  
+  .footer
+    background: $dark
+    &__wrap
+      width: 100%      
+      padding: 0
+    &__form
+      max-width: 100%
+      justify-content: space-between
+      
+    &__button
+      display: block
+      min-width: 100%
+      padding: 1.285rem 8rem
+    &__input
+      border-bottom: 1px solid #fff
+      &-group
+        flex-basis: 100%
+
+
+      
+
+      
+
+  .policy__label
+    &--center
+      justify-content: flex-start
+
+
+    
+
+
+
    
 
   

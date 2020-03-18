@@ -222,13 +222,13 @@
         <form action="#" class="form control__form">
           <div class="control__input-group">
             <label for="user-name" class="label form__label label--dark control__label">Имя</label>
-            <input type="text" class="input form__input control__input input--down" id="user-name"
+            <input type="text" name="userName" class="input form__input control__input input--down" id="user-name"
               placeholder="Как вас зовут:">
           </div>
 
           <div class="control__input-group">
             <label for="user-phone" class="label form__label label--dark control__label">Телефон</label>
-            <input type="tel" class="input form__input control__input" id="user-phone"
+            <input type="tel" name="userPhone" class="input form__input control__input" id="user-phone"
               placeholder="Ваш номер телефона:">
           </div>
 
@@ -380,7 +380,7 @@
 
     <!-- секция Дизайн проект -->
     <section class="section types design section--black">
-      <div class="container">
+      <div class="container">        
         <div class="section-title types__section-title">
           <h2 class="section-title__heading">Дизайн проект</h2>
           <!-- /.section-title__heading -->
@@ -392,9 +392,8 @@
             но и значительно удешевляет материалы
             и сокращает время ремонтных работ</h3>
           <!-- /.section-title__image -->
-        </div>
-        <!-- /.section-title -->
-
+        </div>   
+        
         <div class="row">
           <div class="col-30">
             <div class="card types__card">
@@ -506,11 +505,59 @@
         <!-- /.row -->
       </div>
       <!-- /.container -->
-      <div class="background-black"></div>
+      <!-- <div class="background-black"></div> -->
     </section>
     <!-- /.section design -->
   </main>
 
+
+  <!-- 6 шагов -->
+  <!-- Слайдер -->
+  <!-- <section class="section steps section--dark projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-50">
+          <!-- <div class="section-title section-title--left wow fadeInDown">
+            <h2 class="section-title__heading section-title__heading--primary">Завершенные <span
+                class="section-title__word">проекты</span></h2>
+            
+            <p class="section-title__text">
+              На сайте представлена ​​лишь небольшая часть работ,
+              выполняемых нашей компанией. За 14 лет работы на строительном рынке
+              мы осчастливили более 1000 семей</p>
+          </div> -->
+          
+  
+          <!-- Slider main container -->
+          
+        </div>
+        <!-- /.col-50 -->
+  
+        <!-- <div class="col-50 col-50__image">
+          
+          <div class="swiper-container">
+            
+            <div class="swiper-wrapper swiper-no-swiping">
+              
+              <div class="swiper-slide">
+                <img src="img/image-2.jpg" alt="image">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/image-2.jpg" alt="image">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/image-2.jpg" alt="image">
+              </div>
+            </div>
+          </div>
+        </div> -->
+          
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section> -->
+  <!-- /.section section--dark projects -->
 
 
   <!-- Footer  -->
@@ -523,19 +570,19 @@
 
           <div class="input-group footer__input-group">
             <label for="user-name" class="label form__label label--light">Имя</label>
-            <input type="text" class="input form__input footer__input input--light" id="user-name"
+            <input type="text" name="userName" class="input form__input footer__input input--light" id="user-name"
               placeholder="Как вас зовут:">
           </div>
 
           <div class="input-group footer__input-group">
             <label for="user-phone" class="label form__label label--light">Телефон</label>
-            <input type="tel" class="input form__input footer__input input--light" id="user-phone"
+            <input type="tel" name="userPhone" class="input form__input footer__input input--light" id="user-phone"
               placeholder="Ваш номер телефона:">
           </div>
 
           <div class="input-group footer__input-group footer__input-group--full-width">
             <label for="user-question" class="label form__label label--light ">Вопрос</label>
-            <input type="text" class="input form__input footer__input input--light" id="user-question"
+            <input type="text" name="userQuestion" class="input form__input footer__input input--light" id="user-question"
               placeholder="Я хочу спросить:">
           </div>
 

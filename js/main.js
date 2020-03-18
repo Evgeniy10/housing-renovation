@@ -18,7 +18,7 @@
 
 
 // Выше - рабочий код JS  из 20 задания
-// Ниже - тот же код на jQuery из 21 задания 
+// Ниже - тот же код на jQuery из 21 задания (и далее)
 
 
 
@@ -57,7 +57,68 @@ $(document).ready(function () {
   new WOW().init();
 
   //валидация формы
-  $('.modal__form').validate({
+  $('.control__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2 // имя не менее 2 букв
+      },
+      userPhone: "required",
+      // правило объект (целый блок)      
+    }, // сообщения
+    messages: { //для русского языка
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух букв", // имя не менее 2 букв
+      },
+      userPhone: "Номер телефона обязателен",      
+    }
+  });
+
+  //маска для номера телефона
+  $('[type=tel]').mask('+7(000) 000-00-00', {
+    placeholder: "+7(___) ___-__-__"
+  });
+  
+  
+
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2 // имя не менее 2 букв
+      },
+      userPhone: "required",
+      // правило объект (целый блок)
+      userQuestion: {
+        required: true,
+        
+      }
+    }, // сообщения
+    messages: { //для русского языка
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух букв", // имя не менее 2 букв
+      },
+      userPhone: "Номер телефона обязателен",
+      userQuestion: {
+        required: "Укажите ваш вопрос",        
+      }
+    }
+  });
+
+  //маска для номера телефона
+  $('[type=tel]').mask('+7(000) 000-00-00', {
+    placeholder: "+7(___) ___-__-__"
+  });
+
+
+
+  $('.modal__form',).validate({
     errorClass: "invalid",
     rules: {
       // строчное правило
@@ -84,7 +145,6 @@ $(document).ready(function () {
       }
     }
   });
-
 
   //маска для номера телефона
   $('[type=tel]').mask('+7(000) 000-00-00', {
