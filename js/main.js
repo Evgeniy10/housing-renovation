@@ -68,7 +68,7 @@ $(document).ready(function () {
       userPhoneControl: {
         required: true,
         maxlength: 17,
-        tel: true
+        
       },
       // правило объект (целый блок)  
       // onclick: true,
@@ -100,7 +100,7 @@ $(document).ready(function () {
       userPhoneFooter: {
         required: true,
         minlength: 17,
-        tel: true
+        
       },
       policyCheckboxFooter: {
         required: true,
@@ -134,7 +134,7 @@ $(document).ready(function () {
 
 
 
-  $('.modal__form', ).validate({
+  $('.modal__form').validate({
     errorClass: "invalid",
     errorPlacement: function (error, element) {
       if (element.attr("type") == "checkbox") {
@@ -150,8 +150,7 @@ $(document).ready(function () {
       },
       userPhoneModal: {
         required: true,
-        minlength: 17,
-        tel: true
+        minlength: 17        
       },
       // userPhone: "required",
       // правило объект (целый блок)
