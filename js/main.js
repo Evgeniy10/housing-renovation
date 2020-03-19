@@ -67,7 +67,7 @@ $(document).ready(function () {
       },
       userPhoneControl: {
         required: true,
-        maxlength: 17,
+        minlength: 17,
         
       },
       // правило объект (целый блок)  
@@ -108,7 +108,7 @@ $(document).ready(function () {
       // правило объект (целый блок)
       userQuestionFooter: {
         required: true,
-        text: true
+        
       }
     }, // сообщения
     messages: {
