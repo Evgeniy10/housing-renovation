@@ -81,6 +81,9 @@ $(document).ready(function () {
       // onclick: true,
     }, // сообщения
     messages: { //для русского языка
+      policyCheckboxControl: {
+        required: "Подтвердите согласие",
+      },
       userNameControl: {
         required: "Заполните поле", 
         minlength: "Имя не короче двух букв", // имя не менее 2 букв
@@ -126,6 +129,9 @@ $(document).ready(function () {
       }
     }, // сообщения
     messages: {
+      policyCheckboxFooter: {
+        required: "Подтвердите согласие",
+      },
       userNameFooter: {
         required: "Заполните поле",
         minlength: "Имя не короче двух букв", // имя не менее 2 букв
@@ -174,9 +180,13 @@ $(document).ready(function () {
       },
     }, // сообщения
     messages: { //для русского языка
+      policyCheckboxModal: {
+        required: "Подтвердите согласие",
+      },
       userNameModal: {
         required: "Заполните поле",
         minlength: "Имя не короче двух букв", // имя не менее 2 букв
+        checkbox: "Заполните поле"
       },
       userPhoneModal: "Номер телефона обязателен",
       userEmailModal: {
