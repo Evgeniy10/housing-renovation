@@ -61,19 +61,24 @@ $(document).ready(function () {
     errorClass: "invalid",
     rules: {
       // строчное правило
-      userName: {
+      userNameControl: {
         required: true,
         minlength: 2 // имя не менее 2 букв
       },
-      userPhone: "required",
-      // правило объект (целый блок)      
+      userPhoneControl: {
+        required: true,
+        maxlength: 17,
+        tel: true
+      },
+      // правило объект (целый блок)  
+      // onclick: true,
     }, // сообщения
     messages: { //для русского языка
-      userName: {
-        required: "Заполните поле",
+      userNameControl: {
+        required: "Заполните поле", 
         minlength: "Имя не короче двух букв", // имя не менее 2 букв
       },
-      userPhone: "Номер телефона обязателен",      
+      userPhoneControl: "Номер телефона обязателен",
     }
   });
 
@@ -81,35 +86,44 @@ $(document).ready(function () {
   $('[type=tel]').mask('+7(000) 000-00-00', {
     placeholder: "+7(___) ___-__-__"
   });
-  
-  
+
+
 
   $('.footer__form').validate({
     errorClass: "invalid",
     rules: {
       // строчное правило
-      userName: {
+      userNameFooter: {
         required: true,
-        minlength: 2 // имя не менее 2 букв
+        minlength: 2 // имя не менее 2 букв 
       },
-      userPhone: "required",
-      // правило объект (целый блок)
-      userQuestion: {
+      userPhoneFooter: {
         required: true,
-        
+        minlength: 17,
+        tel: true
+      },
+      policyCheckboxFooter: {
+        required: true,
+      },
+      // правило объект (целый блок)
+      userQuestionFooter: {
+        required: true,
+        text: true
       }
     }, // сообщения
-    messages: { //для русского языка
-      userName: {
+    messages: {
+      userNameFooter: {
         required: "Заполните поле",
         minlength: "Имя не короче двух букв", // имя не менее 2 букв
       },
-      userPhone: "Номер телефона обязателен",
-      userQuestion: {
-        required: "Укажите ваш вопрос",        
+      userPhoneFooter: "Номер телефона обязателен",
+      userQuestionFooter: {
+        required: "Укажите ваш вопрос",
       }
     }
+
   });
+
 
   //маска для номера телефона
   $('[type=tel]').mask('+7(000) 000-00-00', {
@@ -118,33 +132,47 @@ $(document).ready(function () {
 
 
 
-  $('.modal__form',).validate({
+
+
+  $('.modal__form', ).validate({
     errorClass: "invalid",
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+        return element.next('label').append(error);
+      }
+      error.insertAfter($(element));
+    },
     rules: {
       // строчное правило
-      userName: {
+      userNameModal: {
         required: true,
         minlength: 2 // имя не менее 2 букв
       },
-      userPhone: "required",
+      userPhoneModal: {
+        required: true,
+        minlength: 17,
+        tel: true
+      },
+      // userPhone: "required",
       // правило объект (целый блок)
-      userEmail: {
+      userEmailModal: {
         required: true,
         email: true
-      }  
+      },
     }, // сообщения
     messages: { //для русского языка
-      userName: {
+      userNameModal: {
         required: "Заполните поле",
         minlength: "Имя не короче двух букв", // имя не менее 2 букв
       },
-      userPhone: "Номер телефона обязателен",
-      userEmail: {
+      userPhoneModal: "Номер телефона обязателен",
+      userEmailModal: {
         required: "Укажите email",
-        email: "Введите корректный email"  //Введите в формате name@domain.com
+        email: "Введите корректный email" //Введите в формате name@domain.com
       }
     }
   });
+  
 
   //маска для номера телефона
   $('[type=tel]').mask('+7(000) 000-00-00', {
@@ -152,3 +180,4 @@ $(document).ready(function () {
   });
 
 });
+
