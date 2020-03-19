@@ -59,6 +59,13 @@ $(document).ready(function () {
   //валидация формы
   $('.control__form').validate({
     errorClass: "invalid",
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+        return element.next('label').append(error);
+      }
+
+      error.insertAfter($(element));
+    },
     rules: {
       // строчное правило
       userNameControl: {
@@ -91,6 +98,13 @@ $(document).ready(function () {
 
   $('.footer__form').validate({
     errorClass: "invalid",
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+        return element.next('label').append(error);
+      }
+
+      error.insertAfter($(element));
+    },
     rules: {
       // строчное правило
       userNameFooter: {
