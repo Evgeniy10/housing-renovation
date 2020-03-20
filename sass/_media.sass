@@ -112,7 +112,6 @@
     &__text
       margin-left: 0
 
-
   .control
     background-color: $dark      
     &__section-title h2
@@ -224,7 +223,19 @@
     &__button
       display: block
       min-width: 22.86rem
-      margin-bottom: 1.85rem       
+      margin-bottom: 1.85rem  
+      
+  .footer
+    &__wrap-map
+      min-width: 100%
+      height: 450px      
+      margin-bottom: 3.6rem
+
+    &__title-map
+      font-size: 18px
+      line-height: 30px
+      max-width: 100%  
+
 
 @media screen and ( max-height: 520px )
   .hero
@@ -288,6 +299,24 @@
       border-bottom: 1px solid #fff
       &-group
         flex-basis: 100%
+    &__menu      
+      display: none
+    &__wrap-map
+      margin-bottom: 0       
+
+    &__title-map
+      order: 1
+      font-size: 17.4px
+      line-height: 25px
+    &__map-icon
+      order: 2
+      margin-bottom: 2.714rem
+  .map-perm          
+    order: 0
+  
+        
+         
+      
 
 
       

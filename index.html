@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=d0e3d841-e5b9-4d80-80ab-fdd0a6045c41&lang=ru_RU"
+    type="text/javascript">
+  </script>
 </head>
 
 <body>
@@ -222,8 +225,8 @@
         <form action="#" class="form control__form">
           <div class="control__input-group">
             <label for="user-name-control" class="label form__label label--dark control__label">Имя</label>
-            <input type="text" name="userNameControl" maxlength="15" class="input form__input control__input input--down"
-              id="user-name-control" placeholder="Как вас зовут:">
+            <input type="text" name="userNameControl" maxlength="15"
+              class="input form__input control__input input--down" id="user-name-control" placeholder="Как вас зовут:">
           </div>
 
           <div class="control__input-group">
@@ -234,7 +237,8 @@
 
           <button class="button button--primary control__button">Отправить</button>
           <div class="policy control__policy">
-            <input type="checkbox" name="policyCheckboxControl" id="policy-checkbox-control" class="policy__checkbox" required checked>
+            <input type="checkbox" name="policyCheckboxControl" id="policy-checkbox-control" class="policy__checkbox"
+              required checked>
             <label for="policy-checkbox-control" class="policy__label control__policy--label">Я соглашаюсь с обработкой
               данных</label>
           </div>
@@ -568,7 +572,7 @@
         <h3 class="footer__title">Остались вопросы?</h3>
         <form action="#" class="form footer__form">
 
-          <div class="input-group footer__input-group" >
+          <div class="input-group footer__input-group">
             <label for="user-name-footer" class="label form__label label--light">Имя</label>
             <input type="text" name="userNameFooter" maxlength="15" class="input form__input footer__input input--light"
               id="user-name-footer" placeholder="Как вас зовут:">
@@ -576,19 +580,20 @@
 
           <div class="input-group footer__input-group">
             <label for="user-phone-footer" class="label form__label label--light">Телефон</label>
-            <input type="tel" name="userPhoneFooter" class="input form__input footer__input input--light" id="user-phone-footer"
-              placeholder="Ваш номер телефона:">
+            <input type="tel" name="userPhoneFooter" class="input form__input footer__input input--light"
+              id="user-phone-footer" placeholder="Ваш номер телефона:">
           </div>
 
           <div class="input-group footer__input-group footer__input-group--full-width">
             <label for="user-question-footer" class="label form__label label--light ">Вопрос</label>
             <input type="text" name="userQuestionFooter" class="input form__input footer__input input--light"
-              id="user-question-footer" placeholder="Я хочу спросить:" >
+              id="user-question-footer" placeholder="Я хочу спросить:">
           </div>
 
           <div class="policy footer__policy">
-            <input type="checkbox" name="policyCheckboxFooter" id="policy-checkbox-footer" class="policy__checkbox" required checked>
-            <label for="policy-checkbox-footer" class="policy__label policy__label--center" >Я соглашаюсь с обработкой
+            <input type="checkbox" name="policyCheckboxFooter" id="policy-checkbox-footer" class="policy__checkbox"
+              required checked>
+            <label for="policy-checkbox-footer" class="policy__label policy__label--center">Я соглашаюсь с обработкой
               данных</label>
           </div>
           <!-- /.policy -->
@@ -598,6 +603,26 @@
 
       </div>
       <!-- /.footer-wrap -->
+
+
+      <!-- карты  -->
+      <div class=" map footer__map" id="map">
+            <div class="footer__wrap-map">
+              <h3 class="footer__title-map">
+                Пермь, торгово-развлекательный центр Столица
+                Прямой телефон +7 (999) 763 33 99
+              </h3>
+              <div class="footer__map-icon">
+                <img src="img/icon-map.svg" alt="logo">
+              </div>
+
+              <script type="text/javascript" class="map-perm" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab0d61fd9bf99c8b53fad4afa7ad043d6247bcfb5e74f64297936a93a8a511a76&amp;max-width=925&amp;height=465&amp;lang=ru_RU&amp;scroll=false">
+              </script>
+            </div>
+      </div>
+      <!-- /.map -->
+
 
     </div>
     <div class="footer__menu">
@@ -639,8 +664,8 @@
 
         <div class="input-group modal__input-group">
           <label for="user-name-modal" class="label form__label label--light input--light">Имя</label>
-          <input type="text" name="userNameModal" maxlength="15" class="input form__input modal__input" id="user-name-modal"
-            placeholder="Как вас зовут:">
+          <input type="text" name="userNameModal" maxlength="15" class="input form__input modal__input"
+            id="user-name-modal" placeholder="Как вас зовут:">
         </div>
 
         <div class="input-group modal__input-group">
@@ -652,12 +677,13 @@
         <div class="input-group modal__input-group">
           <label for="user-email-modal" class="label form__label label--light input--light">Email</label>
           <input type="email" name="userEmailModal" class="input form__input modal__input" id="user-email-modal"
-            placeholder="Ваш email" >
+            placeholder="Ваш email">
         </div>
         <!-- checked -->
         <div class="policy modal__policy">
-          <input type="checkbox" name="policyCheckboxModal" id="policy-checkbox-modal" class="policy__checkbox" required checked>
-          <label for="policy-checkbox-modal" class="policy__label" >Я соглашаюсь с обработкой данных</label>
+          <input type="checkbox" name="policyCheckboxModal" id="policy-checkbox-modal" class="policy__checkbox" required
+            checked>
+          <label for="policy-checkbox-modal" class="policy__label">Я соглашаюсь с обработкой данных</label>
         </div>
         <!-- /.policy -->
         <button class="button button--primary modal__button">Отправить заявку</button>

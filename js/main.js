@@ -75,7 +75,7 @@ $(document).ready(function () {
       userPhoneControl: {
         required: true,
         minlength: 17,
-        
+
       },
       // правило объект (целый блок)  
       // onclick: true,
@@ -85,7 +85,7 @@ $(document).ready(function () {
         required: "Подтвердите согласие",
       },
       userNameControl: {
-        required: "Заполните поле", 
+        required: "Заполните поле",
         minlength: "Имя не короче двух букв", // имя не менее 2 букв
       },
       userPhoneControl: "Номер телефона обязателен",
@@ -117,7 +117,7 @@ $(document).ready(function () {
       userPhoneFooter: {
         required: true,
         minlength: 17,
-        
+
       },
       policyCheckboxFooter: {
         required: true,
@@ -125,7 +125,7 @@ $(document).ready(function () {
       // правило объект (целый блок)
       userQuestionFooter: {
         required: true,
-        
+
       }
     }, // сообщения
     messages: {
@@ -170,7 +170,7 @@ $(document).ready(function () {
       },
       userPhoneModal: {
         required: true,
-        minlength: 17        
+        minlength: 17
       },
       // userPhone: "required",
       // правило объект (целый блок)
@@ -195,12 +195,49 @@ $(document).ready(function () {
       }
     }
   });
-  
+
 
   //маска для номера телефона
   $('[type=tel]').mask('+7(000) 000-00-00', {
     placeholder: "+7(___) ___-__-__"
   });
 
-});
 
+
+  // создание яндекс карты
+
+  // ymaps.ready(function () {
+  //   var myMap = new ymaps.Map('map', {
+  //       center: [57.977679, 56.189179],
+  //       zoom: 9
+  //     }, {
+  //       searchControlProvider: 'yandex#search'
+  //     }),
+
+  //     // Создаём макет содержимого.
+  //     MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+  //       '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+  //     ),
+
+  //     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+  //       hintContent: 'Офис',
+  //       balloonContent: 'Вход со двора'
+  //     }, {
+  //       // Опции.
+  //       // Необходимо указать данный тип макета.
+  //       iconLayout: 'default#image',
+  //       // Своё изображение иконки метки.
+  //       iconImageHref: 'img/marker.png',
+  //       // Размеры метки.
+  //       iconImageSize: [32, 32],
+  //       // Смещение левого верхнего угла иконки относительно
+  //       // её "ножки" (точки привязки).
+  //       iconImageOffset: [-5, -38]
+  //     });
+
+  //   myMap.geoObjects
+  //     .add(myPlacemark);
+  // });
+
+
+});
