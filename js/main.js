@@ -89,6 +89,19 @@ $(document).ready(function () {
         minlength: "Имя не короче двух букв", // имя не менее 2 букв
       },
       userPhoneControl: "Номер телефона обязателен",
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('AJax сработал. Ответ сервера: ' + response);
+          alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+          $(form)[0].reset();          // очистка полей формы
+          modal.removeClass('modal--visible'); // закрыть модальное окно
+        }
+      });
     }
   });
 
@@ -140,8 +153,20 @@ $(document).ready(function () {
       userQuestionFooter: {
         required: "Укажите ваш вопрос",
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('AJax сработал. Ответ сервера: ' + response);
+          alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+          $(form)[0].reset();          // очистка полей формы
+          modal.removeClass('modal--visible'); // закрыть модальное окно
+        }
+      });
     }
-
   });
 
 
@@ -193,6 +218,19 @@ $(document).ready(function () {
         required: "Укажите email",
         email: "Введите корректный email" //Введите в формате name@domain.com
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),        
+        success: function (response) {
+          console.log('AJax сработал. Ответ сервера: ' + response);
+          alert('Форма отправлена, мы свяжемся с вами через 10 минут');          
+          $(form)[0].reset();          // очистка полей формы
+          modal.removeClass('modal--visible'); // закрыть модальное окно
+        }
+      });
     }
   });
 

@@ -20,7 +20,7 @@ try {
     $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = 'geniytop777@gmail.com';                     // SMTP username
-    $mail->Password   = 'Platina_1945';                               // SMTP password
+    $mail->Password   = 'pLatina_1945';                               // SMTP password
     $mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
@@ -34,9 +34,12 @@ try {
     $mail->Subject = 'Новая заявка с сайта';
     $mail->Body    = "Имя пользователя: ${userNameModal}, его телефон: ${userPhoneModal}, его почта: ${userEmailModal}";    
 
-    $mail->send();
-    header('Location: thanks.html');
-    // echo 'Письмо отправлено';
+    if ($mail->send()) {
+      echo "ok";
+    } else {
+      echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
+    }
+    
 } catch (Exception $e) {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }
@@ -64,7 +67,7 @@ try {
     $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = 'geniytop777@gmail.com';                     // SMTP username
-    $mail->Password   = 'Platina_1945';                               // SMTP password
+    $mail->Password   = 'pLatina_1945';                               // SMTP password
     $mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
@@ -78,9 +81,12 @@ try {
     $mail->Subject = 'Новая заявка с сайта';
     $mail->Body    = "Имя пользователя: ${userNameModal}, его телефон: ${userPhoneModal}, его почта: ${userEmailModal}";    
 
-    $mail->send();
-    header('Location: thanks.html');
-    // echo 'Письмо отправлено';
+    if ($mail->send()) {
+      echo "ok";
+    } else {
+      echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
+    }    
+    
 } catch (Exception $e) {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }
@@ -110,7 +116,7 @@ try {
     $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = 'geniytop777@gmail.com';                     // SMTP username
-    $mail->Password   = 'Platina_1945';                               // SMTP password
+    $mail->Password   = 'pLatina_1945';                               // SMTP password
     $mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
@@ -124,9 +130,12 @@ try {
     $mail->Subject = 'Новая заявка с сайта';
     $mail->Body    = "Имя пользователя: ${userNameModal}, его телефон: ${userPhoneModal}, его почта: ${userEmailModal}";    
 
-    $mail->send();
-    header('Location: thanks.html');
-    // echo 'Письмо отправлено';
+    if ($mail->send()) {
+      echo "ok";
+    } else {
+      echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
+    }
+           
 } catch (Exception $e) {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }
