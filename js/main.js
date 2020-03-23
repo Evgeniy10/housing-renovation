@@ -28,7 +28,15 @@ $(document).ready(function () {
     closeBtn = $('.modal__close');
 
 
-  modalBtn.on('click', function () {
+  // var modal2 = $('.modal2'),
+    // modalBtn2 = $('[data-toggle=modal2]'),
+    // closeBtn = $('.modal__close');  
+
+
+  
+
+
+  modalBtn.on('click', function () {      // основное
     modal.toggleClass('modal--visible');
   });
   closeBtn.on('click', function () {
@@ -234,7 +242,18 @@ $(document).ready(function () {
         data: $(form).serialize(),        
         success: function (response) {
           console.log('AJax сработал. Ответ сервера: ' + response);
-          alert('Форма отправлена, мы свяжемся с вами через 10 минут');          
+
+          
+          // $(function () {            
+          //   $("#modal2").modal2();
+          // });
+
+
+          $(".modal2").css("display", "block");
+
+
+
+          // alert('Форма отправлена, мы свяжемся с вами через 10 минут');          
           $(form)[0].reset();          // очистка полей формы
           modal.removeClass('modal--visible'); // закрыть модальное окно
         },
