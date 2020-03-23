@@ -95,13 +95,16 @@ $(document).ready(function () {
     submitHandler: function(form) {
       $.ajax({
         type: "POST",
-        url: "send.php",
+        url: "send2.php",
         data: $(form).serialize(),
         success: function (response) {
           console.log('AJax сработал. Ответ сервера: ' + response);
           alert('Форма отправлена, мы свяжемся с вами через 10 минут');
           $(form)[0].reset();          // очистка полей формы
           modal.removeClass('modal--visible'); // закрыть модальное окно
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response);
         }
       });
     }
@@ -159,13 +162,16 @@ $(document).ready(function () {
     submitHandler: function(form) {
       $.ajax({
         type: "POST",
-        url: "send.php",
+        url: "send3.php",
         data: $(form).serialize(),
         success: function (response) {
           console.log('AJax сработал. Ответ сервера: ' + response);
           alert('Форма отправлена, мы свяжемся с вами через 10 минут');
           $(form)[0].reset();          // очистка полей формы
           modal.removeClass('modal--visible'); // закрыть модальное окно
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response);
         }
       });
     }
@@ -231,6 +237,9 @@ $(document).ready(function () {
           alert('Форма отправлена, мы свяжемся с вами через 10 минут');          
           $(form)[0].reset();          // очистка полей формы
           modal.removeClass('modal--visible'); // закрыть модальное окно
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response);
         }
       });
     }

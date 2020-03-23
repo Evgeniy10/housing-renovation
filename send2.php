@@ -1,8 +1,7 @@
 <?php
 
-  $userNameModal = $_POST['userNameModal'];
-  $userPhoneModal = $_POST['userPhoneModal'];
-  $userEmailModal = $_POST['userEmailModal'];
+  $userNameControl = $_POST['userNameControl'];
+  $userPhoneControl = $_POST['userPhoneControl'];  
 
 
   // Load Composer's autoloader       //подключение библиотеки
@@ -38,12 +37,11 @@ try {
       echo "ok";
     } else {
       echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
-    }
+    }    
     
 } catch (Exception $e) {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }
-
 ?>
 
 
