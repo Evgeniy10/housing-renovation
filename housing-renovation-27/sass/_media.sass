@@ -1,0 +1,491 @@
+@media screen and ( max-width: 1200px )
+  html
+    // font-size: 12px
+  
+  .nav
+    &__item
+      margin-right: 1rem
+
+  .card
+    &__text
+      // position: relative  //текст заезжает на img
+      margin: 0 auto
+      margin-top: -6.3rem     //текст заезжает на img  
+         
+          
+@media screen and ( max-width: 992px )
+  .nav
+    display: none    
+  .hero
+    &__instagram
+      display: none
+    &__content
+      margin-left: 0
+    &__scroll-down
+      padding: 25px 60px 25px 38px
+
+  .card
+    &__pricetag
+      padding: 1.1rem 2.25rem    
+      font-size: 1.1rem  
+  // .col-50__image
+  //   align-self: center       
+
+
+@media screen and ( max-width: 799px )
+  .row
+    display: flex
+    flex-direction: column    
+    align-items: center    
+
+  .hero    
+    &::after
+      display: none       
+
+  .types
+    &__card 
+      margin-bottom: 5rem
+
+  .card
+    &__text
+      margin-left: 0
+
+  .card
+    &__pricetag
+      padding: 1.1rem 2.76rem    
+      font-size: 1.28rem
+  .section-title__word
+    &::after
+      display: none 
+  .col-50
+    &__image
+      margin-top: 1.5rem      
+  .col
+    &-50
+      width: 95%             
+  .col__50
+    min-width: 90%
+
+@media screen and ( max-width: 767px )   
+  .col
+    &-50
+      width: 100%                  
+  .col__50
+    min-width: 85%
+
+  .section-title__heading--primary
+    font-size: 1.6rem  
+
+  .swiper-slide       
+    &__text
+      margin-bottom: 1.8rem
+      padding-bottom: 1.1rem      
+    &__heading
+      font-size: 1rem
+      line-height: 1.0rem      
+      margin-bottom: 0.69rem 
+  .slide--value-bottom:only-child 
+    margin-bottom: 3rem      
+
+  .section--black
+    background-color: $dark    
+    width: 100%
+    height: 100%
+    z-index: -1 
+
+  .design h2, h3 
+    color: #fff
+  .section-subtitle__heading
+    color: #fff
+    font-size: 15px               
+            
+@media screen and ( max-width: 760px )
+  .row
+    flex-direction: column
+    align-items: center
+
+  .types
+    &__card 
+      margin-bottom: 5rem
+
+  .card
+    &__text
+      margin-left: 0
+
+  .control
+    background-color: $dark      
+    &__section-title h2
+      font-size: 1.572rem
+      // margin-bottom: 2.214rem
+      // margin-top: -30rem
+    &__video      
+      margin-bottom: 2rem
+      max-width: 58.357rem
+      min-height: 14rem          
+    &__text
+      max-width: 40.785rem 
+      margin: auto
+      margin-bottom: 1.857rem
+      text-align: center
+      font-size: 1rem
+      line-height: 1.72rem
+      color: #fff
+      &::before       // палка перед текстом
+        content: ''
+        display: block
+        margin: auto
+        margin-bottom: 1.5rem
+        width: 55px
+        height: 2px
+        background-color: $primary
+        border-radius: 30px
+    &__form
+      display: flex  
+      justify-content: space-between 
+      flex-direction: column       
+      flex-wrap: wrap
+      min-width: 100%
+      margin: auto
+    &__input-group
+      display: flex
+      justify-content: space-between
+      flex-direction: column       
+      width: 100%      
+      
+    &__label
+      margin-bottom: -7px
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 15px            
+
+    &__button         
+      padding: 1.285rem 4.785rem
+      margin: 0 
+      margin-top: 62px
+      order: 2
+      margin-bottom: -85px
+    &__policy
+      flex-basis: 100%        
+      color: $light
+      margin-left: -25px
+      // margin: auto
+      margin-top: 7px
+      order: 1
+      &--label
+        justify-content: center
+  .input--down
+    margin-bottom: 4.142rem
+    // color: $light
+  .control
+    &__input
+      background-color: transparent  // убрать рамку
+      border: none
+      border-bottom: 1px solid #fff
+      font-size: 1.285rem
+      color: $light
+      padding: 0.5rem 0         
+  .video
+    &__play
+      position: relative  
+      margin: auto      // для выравнивания кнопки    
+  input[type="text"]::placeholder
+      color: $light
+      font-size: 18px
+      margin-top: 7px
+  input[type="tel"]::placeholder
+      color: $light
+      font-size: 18px
+      margin-top: 7px
+      
+
+@media screen and ( max-width: 576px )
+  .contacts
+    &__phone
+      margin-right: 0 
+      color: $light
+      text-decoration: none
+    &__button
+      display: none  
+  .title 
+    font-size: 2rem
+    margin-top: 30px
+
+  .hero__content
+    margin: auto
+
+  .hero
+    &__scroll-down
+      display: none
+    &__content
+      max-width: 22.86rem
+    &__text
+      font-size: 1.29rem
+      margin-bottom: 2.28rem
+    &__button
+      display: block
+      min-width: 22.86rem
+      margin-bottom: 1.85rem  
+      
+  .footer
+    &__wrap-map
+      min-width: 100%
+      height: 450px      
+      margin-bottom: 3.6rem
+
+    &__title-map
+      font-size: 18px
+      line-height: 30px
+      max-width: 100%  
+
+
+@media screen and ( max-height: 520px )
+  .hero
+    &__scroll-down
+      display: none 
+    &::after
+      display: none
+
+@media screen and ( max-width: 376px )
+  .container 
+    width: 90% 
+     
+  .menu
+    display: inline-blok    
+    
+  .logo               
+    margin-right: 3.2rem    
+
+  .phone     
+    margin-left: 3.2rem    
+    
+  .title 
+    font-size: 2rem
+    margin-top: 10px
+
+  .hero    
+    &__content   
+      // margin: auto   
+      max-width: 22rem 
+    &__title
+      font-size: 2.0rem       
+    &__text
+      font-size: 1.25rem
+      margin-top: 1.5rem
+      margin-bottom: 2.28rem
+    &__button
+      display: block
+      min-width: 22.9rem
+      margin-bottom: 1.85rem   
+
+  .col-50__image
+    min-width: 90%    
+   
+  .swiper-slide__heading
+    font-size: 1rem 
+
+  .footer
+    background: $dark
+    &__wrap
+      width: 100%      
+      padding: 0
+    &__form
+      max-width: 100%
+      justify-content: space-between
+      
+    &__button
+      display: block
+      min-width: 100%
+      padding: 1.285rem 8rem
+    &__input
+      border-bottom: 1px solid #fff
+      &-group
+        flex-basis: 100%
+    &__menu      
+      display: none
+    &__wrap-map
+      margin-bottom: 0       
+
+    &__title-map
+      order: 1
+      font-size: 17.4px
+      line-height: 25px
+    &__map-icon
+      order: 2
+      margin-bottom: 2.714rem
+  .map-perm          
+    order: 0
+  
+        
+         
+      
+
+
+      
+
+      
+
+  .policy__label
+    &--center
+      justify-content: flex-start
+
+
+    
+
+
+
+   
+
+  
+
+              
+
+@media screen and ( max-width: 363px )          
+  .hero
+    &__content   
+      margin: auto   
+      max-width: 20rem 
+    &__title
+      font-size: 1.8rem       
+    &__text
+      font-size: 1.25rem
+      margin-top: 1.5rem
+      margin-bottom: 2.28rem
+    &__button
+      display: block
+      min-width: 21.0rem
+      margin-bottom: 1.85rem  
+  
+@media screen and ( max-width: 360px )
+  .menu
+    display: inline-blok    
+    
+  .logo               
+    margin-right: 2.7rem 
+
+  .phone     
+    margin-left: 2.7rem 
+
+  .title 
+    font-size: 1.9rem
+    margin-top: 10px
+  .hero    
+    &__content   
+      margin: auto   
+      max-width: 20rem 
+    &__title
+      font-size: 1.8rem       
+    &__text
+      font-size: 1.25rem
+      margin-top: 1.5rem
+      margin-bottom: 2.28rem
+    &__button
+      display: block
+      min-width: 21.0rem
+      margin-bottom: 1.85rem 
+
+@media screen and ( max-width: 345px ) 
+  .menu
+    display: inline-blok    
+    
+  .logo               
+    margin-right: 2.3rem 
+    margin-left: 0rem
+
+  .phone     
+    margin-left: 2.3rem
+
+  .title 
+    font-size: 1.8rem
+    margin-top: 10px
+  .hero    
+    &__content   
+      margin: auto   
+      max-width: 20rem 
+    &__title
+      font-size: 1.8rem       
+    &__text
+      font-size: 1.25rem
+      margin-top: 1.5rem
+      margin-bottom: 2.28rem
+    &__button
+      display: block
+      min-width: 20.9rem
+      margin-bottom: 1.85rem
+
+@media screen and ( max-width: 340px ) 
+  .menu
+    display: inline-blok    
+    
+  .logo               
+    margin-right: 2.0rem 
+
+  .phone     
+    margin-left: 2.0rem 
+
+@media screen and ( max-width: 330px ) 
+  .menu
+    display: inline-blok    
+    
+  .logo               
+    margin-right: 1.7rem 
+
+  .phone     
+    margin-left: 1.7rem 
+  .hero    
+    &__content   
+      margin: auto   
+      max-width: 19.8rem 
+    &__title
+      font-size: 1.8rem       
+    &__text
+      font-size: 1.25rem
+      margin-top: 1.5rem
+      margin-bottom: 2.28rem
+    &__button
+      display: block
+      min-width: 20.6rem
+      margin-bottom: 1.85rem  
+
+@media screen and ( max-width: 325px ) 
+  .menu
+    display: inline-blok    
+    
+  .logo               
+    margin-right: 1.5rem 
+
+  .phone     
+    margin-left: 1.5rem  
+  .hero    
+    &__content   
+      margin: auto   
+      max-width: 22rem 
+    &__title
+      font-size: 1.69rem  
+      line-height: 125%     
+    &__text
+      font-size: 1.15rem
+      margin-top: 1.5rem
+      margin-bottom: 2.28rem
+    &__button
+      display: block
+      min-width: 20.1rem
+      margin-bottom: 1.85rem               
+
+
+
+
+
+
+
+              
+
+               
+
+
+
+  
+      
+
+
+        
+
+  

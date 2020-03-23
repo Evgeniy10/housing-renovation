@@ -1,0 +1,43 @@
+.section-title__heading
+  font-size: 20px
+  
+.section-subtitle__heading 
+  display: inline-block
+  max-width: 53.57rem
+  font-family: 'Futura Book'
+  font-style: normal
+  font-weight: normal
+  font-size: 20px
+  line-height: 27px
+  text-align: center
+  color: #363636
+  text-transform: none
+
+section
+  &--black
+    background-color: $dark
+    color: $light
+    z-index: -2
+    height: 50% 
+    // margin-top: 350px 
+
+.design   
+  position: relative
+  &::after    // темный фон
+    content: ''
+    position: absolute
+    bottom: 0
+    right: 0
+    left: 0
+    z-index: -10
+    width: 100%
+    height: 60.15rem
+    background-color: $dark
+    margin-bottom: -16px  //убирает разделяющую полоску между блоками
+
+  padding-bottom: 30rem // оставить внизу пространство для поднятого блока 
+  &__section-title
+    margin-bottom: 2.78rem
+  
+    
+
