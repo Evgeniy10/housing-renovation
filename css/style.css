@@ -1130,7 +1130,7 @@ section--black {
 
 .footer__title {
   text-transform: uppercase;
-  font-famaily: 'Yeseva One', cursive;
+  font-family: 'Yeseva One', cursive;  
   font-style: normal;
   font-weight: normal;
   font-size: 1.428rem;
@@ -1317,8 +1317,9 @@ section--black {
 }
 
 .modal2 {
+  display: block;
   opacity: 0;
-  visibility: hidden;
+  visibility: visible;
   position: fixed;
   z-index: 199;
   left: 0;
