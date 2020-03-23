@@ -56,6 +56,8 @@ $(document).ready(function () {
 
   new WOW().init();
 
+  
+
   //валидация формы
   $('.control__form').validate({
     errorClass: "invalid",

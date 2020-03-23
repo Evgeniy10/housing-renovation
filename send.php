@@ -44,10 +44,11 @@ try {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }
 
-?>
 
 
-<?
+
+
+
   $userNameControl = $_POST['userNameControl'];
   $userPhoneControl = $_POST['userPhoneControl'];  
 
@@ -91,11 +92,11 @@ try {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }
 
-?>
 
 
 
-<?
+
+
   $userNameFooter = $_POST['userNameFooter'];
   $userPhoneFooter = $_POST['userPhoneFooter']; 
   $userQuestionFooter = $_POST['userQuestionFooter']; 
@@ -140,4 +141,3 @@ try {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }
 
-?>
