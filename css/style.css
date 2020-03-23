@@ -1317,7 +1317,6 @@ section--black {
 }
 
 .modal2 {
-  display: block;
   opacity: 0;
   visibility: hidden;
   position: fixed;
@@ -1350,6 +1349,7 @@ section--black {
   background: #131313 url("../img/bg-lines.svg") no-repeat center;
   padding: 2.357rem 3.5rem 1.928rem;
   color: #fff;
+  margin: auto;
 }
 
 .modal2__close {
