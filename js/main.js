@@ -107,7 +107,12 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           console.log('AJax сработал. Ответ сервера: ' + response);
-          alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+
+          $("#modal2").addClass("modal2--visible");    //модальное окно с сообщением успешной отправки              
+          $("#modal2-close").click(function () { // закрытие этого модального окна
+            $(".modal2").removeClass();
+          });  
+          // alert('Форма отправлена, мы свяжемся с вами через 10 минут');
           $(form)[0].reset();          // очистка полей формы
           modal.removeClass('modal--visible'); // закрыть модальное окно
         },
@@ -174,7 +179,12 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           console.log('AJax сработал. Ответ сервера: ' + response);
-          alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+
+          $("#modal2").addClass("modal2--visible");    //модальное окно с сообщением успешной отправки              
+          $("#modal2-close").click(function () { // закрытие этого модального окна
+            $(".modal2").removeClass();
+          });  
+          // alert('Форма отправлена, мы свяжемся с вами через 10 минут');
           $(form)[0].reset();          // очистка полей формы
           modal.removeClass('modal--visible'); // закрыть модальное окно
         },
@@ -241,18 +251,12 @@ $(document).ready(function () {
         url: "send.php",
         data: $(form).serialize(),        
         success: function (response) {
-          console.log('AJax сработал. Ответ сервера: ' + response);
+          console.log('AJax сработал. Ответ сервера: ' + response);  
 
-          
-          // $(function () {            
-          //   $("#modal2").modal2();
-          // });
-
-
-          $(".modal2").css("display", "block");
-
-
-
+          $("#modal2").addClass("modal2--visible");    //модальное окно с сообщением успешной отправки              
+          $("#modal2-close").click(function () { // закрытие этого модального окна
+            $(".modal2").removeClass();
+          });                  
           // alert('Форма отправлена, мы свяжемся с вами через 10 минут');          
           $(form)[0].reset();          // очистка полей формы
           modal.removeClass('modal--visible'); // закрыть модальное окно
