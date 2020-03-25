@@ -262,40 +262,24 @@ $(document).ready(function () {
 
 
 
+
+  
+
+
+
   // создание яндекс карты
 
-  // ymaps.ready(function () {
-  //   var myMap = new ymaps.Map('map', {
-  //       center: [57.977679, 56.189179],
-  //       zoom: 9
-  //     }, {
-  //       searchControlProvider: 'yandex#search'
-  //     }),
+  
 
-  //     // Создаём макет содержимого.
-  //     MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-  //       '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-  //     ),
 
-  //     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-  //       hintContent: 'Офис',
-  //       balloonContent: 'Вход со двора'
-  //     }, {
-  //       // Опции.
-  //       // Необходимо указать данный тип макета.
-  //       iconLayout: 'default#image',
-  //       // Своё изображение иконки метки.
-  //       iconImageHref: 'img/marker.png',
-  //       // Размеры метки.
-  //       iconImageSize: [32, 32],
-  //       // Смещение левого верхнего угла иконки относительно
-  //       // её "ножки" (точки привязки).
-  //       iconImageOffset: [-5, -38]
-  //     });
 
-  //   myMap.geoObjects
-  //     .add(myPlacemark);
-  // });
+  setTimeout(function () {
+    var elem = document.createElement('script');
+    elem.type = 'text/javascript';
+    elem.src = 'https://api-maps.yandex.ru/2.1/?apikey=d0e3d841-e5b9-4d80-80ab-fdd0a6045c41&lang=ru_RU&onload=createMap';
+    document.getElementsByTagName('body')[0].appendChild(elem);    
+  }, 5000);
 
+  
 
 });

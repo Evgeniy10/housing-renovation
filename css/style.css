@@ -1131,7 +1131,7 @@ section--black {
 
 .footer__title {
   text-transform: uppercase;
-  font-family: 'Yeseva One', cursive;
+  font-famaily: 'Yeseva One', cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 1.428rem;
@@ -1190,6 +1190,12 @@ section--black {
 .footer__menu {
   background: #131313;
   padding: 4.285rem 0;
+  margin-top: 15rem;
+}
+
+.footer__map {
+  height: 465px;
+  margin-bottom: 2.64rem;
 }
 
 .footer__wrap-map {
@@ -1207,7 +1213,6 @@ section--black {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 3.714rem;
-  margin-bottom: 4.64rem;
 }
 
 .footer__title-map {

@@ -8,8 +8,9 @@
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=d0e3d841-e5b9-4d80-80ab-fdd0a6045c41&lang=ru_RU">
+  <!-- <script rel="dns-prefetch" src="https://api-maps.yandex.ru/2.1/?apikey=d0e3d841-e5b9-4d80-80ab-fdd0a6045c41&lang=ru_RU"> -->
   </script>
 </head>
 
@@ -206,8 +207,11 @@
         <!-- /.section-title -->
 
 
-        <div class="control__video video">
-          <img src="img/play-icon.svg" alt="play-icon" class="video__play">
+        <div class="control__video video" id="player">
+          <a class="video__play" data-fancybox href="https://www.youtube.com/RHzzLqJWqHs">
+            <img src="img/play-icon.svg" alt="play-icon">
+          </a>
+          <!-- <img src="img/play-icon.svg" alt="play-icon" class="video__play"> -->
         </div>
         <!-- /.control__video -->
 
@@ -550,10 +554,8 @@
           <button class="button button--primary footer__button">Отправить</button>
         </form>
         <!-- /.form footer__form -->
-
       </div>
       <!-- /.footer-wrap -->
-
 
       <!-- карты  -->
       <div class=" map footer__map" id="map">
@@ -566,9 +568,9 @@
                 <img src="img/icon-map.svg" alt="logo">
               </div>
 
-              <script class="map-perm" async
+              <!-- <script class="map-perm" id="map" async
                 src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab0d61fd9bf99c8b53fad4afa7ad043d6247bcfb5e74f64297936a93a8a511a76&amp;max-width=925&amp;height=465&amp;lang=ru_RU&amp;scroll=false">
-              </script>
+              </script> -->
             </div>
       </div>
       <!-- /.map -->
@@ -662,11 +664,51 @@
 
 
 
+
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+
+
+  <script>
+    function createMap() {
+      var myMap = new ymaps.Map('map', {
+        center: [57.977679, 56.189179],
+        zoom: 9
+      }, {
+        searchControlProvider: 'yandex#search'
+      }),
+
+        // Создаём макет содержимого.
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          hintContent: 'Офис',
+          balloonContent: 'Вход со двора'
+        }, {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#image',
+          // Своё изображение иконки метки.
+          iconImageHref: 'img/marker.png',
+          // Размеры метки.
+          iconImageSize: [32, 32],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-5, -38]
+        });
+
+      myMap.geoObjects
+        .add(myPlacemark);
+    }
+  </script>
+
+  
   <script src="js/main.js"></script>
 </body>
 
