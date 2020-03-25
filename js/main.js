@@ -27,15 +27,6 @@ $(document).ready(function () {
     modalBtn = $('[data-toggle=modal]'),
     closeBtn = $('.modal__close');
 
-
-  // var modal2 = $('.modal2'),
-    // modalBtn2 = $('[data-toggle=modal2]'),
-    // closeBtn = $('.modal__close');  
-
-
-  
-
-
   modalBtn.on('click', function () {      // основное
     modal.toggleClass('modal--visible');
   });
@@ -110,8 +101,8 @@ $(document).ready(function () {
 
           $("#modal2").addClass("modal2--visible");    //модальное окно с сообщением успешной отправки              
           $("#modal2-close").click(function () { // закрытие этого модального окна
-            $(".modal2").removeClass();
-          });  
+            $(".modal2").removeClass("modal2--visible");
+          });            
           // alert('Форма отправлена, мы свяжемся с вами через 10 минут');
           $(form)[0].reset();          // очистка полей формы
           modal.removeClass('modal--visible'); // закрыть модальное окно
@@ -127,7 +118,6 @@ $(document).ready(function () {
   $('[type=tel]').mask('+7(000) 000-00-00', {
     placeholder: "+7(___) ___-__-__"
   });
-
 
 
   $('.footer__form').validate({
@@ -182,7 +172,7 @@ $(document).ready(function () {
 
           $("#modal2").addClass("modal2--visible");    //модальное окно с сообщением успешной отправки              
           $("#modal2-close").click(function () { // закрытие этого модального окна
-            $(".modal2").removeClass();
+            $(".modal2").removeClass("modal2--visible");
           });  
           // alert('Форма отправлена, мы свяжемся с вами через 10 минут');
           $(form)[0].reset();          // очистка полей формы
@@ -195,14 +185,10 @@ $(document).ready(function () {
     }
   });
 
-
   //маска для номера телефона
   $('[type=tel]').mask('+7(000) 000-00-00', {
     placeholder: "+7(___) ___-__-__"
   });
-
-
-
 
 
   $('.modal__form').validate({
@@ -255,7 +241,7 @@ $(document).ready(function () {
 
           $("#modal2").addClass("modal2--visible");    //модальное окно с сообщением успешной отправки              
           $("#modal2-close").click(function () { // закрытие этого модального окна
-            $(".modal2").removeClass();
+            $(".modal2").removeClass("modal2--visible");
           });                  
           // alert('Форма отправлена, мы свяжемся с вами через 10 минут');          
           $(form)[0].reset();          // очистка полей формы
