@@ -219,15 +219,16 @@
       margin-bottom: 1.85rem  
       
   .footer
-    &__wrap-map
+    &__map
       min-width: 100%
-      height: 450px      
-      margin-bottom: 3.6rem
-
+      height: 360px            
+     
     &__title-map
-      font-size: 18px
+      font-size: 1.285rem
       line-height: 30px
-      max-width: 100%  
+      max-width: 100%                 
+
+            
 
 
 @media screen and ( max-height: 520px )
@@ -237,10 +238,118 @@
     &::after
       display: none
 
+@media screen and ( max-width: 515px )
+  .footer
+    &__wrap       
+      padding-bottom: 1.0rem  
+      margin-bottom: 0.4rem
+    &__wrap-map
+      margin-top: 1.714rem  
+    &__map
+      min-width: 100%
+      height: 350px            
+     
+    &__title-map
+      font-size: 1.28rem
+      line-height: 26px
+      white-space: pre-line
+      max-width: 100% 
+
+    &__map-icon
+      margin-bottom: 1.5rem  
+      margin-top: 1.0rem      
+
+@media screen and ( max-width: 410px )  
+    &__wrap   
+      margin-top: -30rem    
+      padding-bottom: 0.5rem  
+      margin-bottom: 0.2rem      
+    &__wrap-map
+      margin-top: 0.5rem 
+    &__map
+      min-width: 100%
+      max-height: 260px           
+     
+    &__title-map
+      font-size: 1.25rem
+      line-height: 27px
+      white-space: pre-line
+      max-width: 100% 
+      margin-top: 0      
+
+    &__map-icon
+      margin-bottom: 1.2rem  
+      margin-top: 1.0rem  
+
+    &__menu     
+      padding-top: 2.285rem   
+     
+
+@media screen and ( max-width: 405px )
+  .container
+    width: 90%    
+    margin: auto   
+
+  .footer  
+    display: flex  
+    background: $black
+    padding-bottom: 12rem
+    &__wrap   
+      margin-top: -30rem    
+      padding-bottom: 0.5rem  
+      margin-bottom: 3.5rem 
+      padding: 0
+      min-width: 100%
+    &__form
+      display: flex  
+      flex-direction: column      
+      justify-content: space-between 
+      widht: 100%
+    &__input  
+      border-bottom: 1px solid #fff
+      &-group
+       background: $black    
+
+    &__policy  
+      align-self: flex-start 
+      margin-bottom: 3.6rem  
+      margin-top: -23px  
+      
+    &__button    
+      max-width: 100% 
+      margin: 0 auto       
+      padding: 1.28rem 14.3em         
+                 
+    &__wrap-map
+      margin-top: 0.5rem 
+    &__map
+      display: flex
+      flex-direction: column
+      min-width: 100%
+      max-height: 260px 
+    &__menu     
+      display: none             
+     
+    &__title-map
+      font-size: 1.25rem
+      line-height: 27px
+      white-space: pre-line
+      max-width: 100% 
+      margin-top: 0  
+      order: 1    
+
+    &__map-icon
+      margin-bottom: 1.2rem  
+      margin-top: 1.0rem  
+      order: 2
+
+  .ymaps-2-1-76-map
+    order: -1   
+
+
 @media screen and ( max-width: 376px )
   .container 
-    width: 90% 
-     
+    width: 90%      
   .menu
     display: inline-blok    
     
@@ -255,8 +364,7 @@
     margin-top: 10px
 
   .hero    
-    &__content   
-      // margin: auto   
+    &__content            
       max-width: 22rem 
     &__title
       font-size: 2.0rem       
@@ -276,6 +384,7 @@
     font-size: 1rem 
 
   .footer
+    padding-bottom: 14rem
     background: $dark
     &__wrap
       width: 100%      
@@ -293,20 +402,8 @@
       &-group
         flex-basis: 100%
     &__menu      
-      display: none
-    &__wrap-map
-      margin-bottom: 0       
-
-    &__title-map
-      order: 1
-      font-size: 17.4px
-      line-height: 25px
-    &__map-icon
-      order: 2
-      margin-bottom: 2.714rem
-  .map-perm          
-    order: 0    
-       
+      display: none  
+           
   
   .policy__label
     &--center
