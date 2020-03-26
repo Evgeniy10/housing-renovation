@@ -496,13 +496,10 @@ button:active, button:focus {
 }
 
 .button__up {
-  position: absolute;
   text-transform: uppercase;
   text-decoration: none;
   color: #E3B873;
   font-size: 0.9rem;
-  margin-top: 1.5rem;
-  padding-bottom: 1rem;
   opacity: 0.8;
   border-top: 1px solid #E3B873;
   border-radius: 50px;
@@ -1145,7 +1142,7 @@ section--black {
 
 .footer__title {
   text-transform: uppercase;
-  font-famaily: 'Yeseva One', cursive;
+  font-family: 'Yeseva One', cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 1.428rem;
@@ -1202,6 +1199,7 @@ section--black {
 }
 
 .footer__menu {
+  position: relative;
   background: #131313;
   padding: 4.285rem 0;
   margin-top: 15rem;
@@ -1245,6 +1243,11 @@ section--black {
 .footer__map-icon {
   margin-bottom: 2.5rem;
   margin-top: 1.875rem;
+}
+
+.btn-up {
+  position: absolute;
+  bottom: 0.7rem;
 }
 
 .modal {
@@ -1804,7 +1807,7 @@ section--black {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    widht: 100%;
+    width: 100%;
   }
   .footer__input {
     border-bottom: 1px solid #fff;
