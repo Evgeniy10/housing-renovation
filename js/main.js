@@ -116,7 +116,7 @@ $(document).ready(function () {
 
   //маска для номера телефона
   $('[type=tel]').mask('+7(000) 000-00-00', {
-    placeholder: "+7(___) ___-__-__"
+    placeholder: "Ваш номер телефона:"
   });
 
 
@@ -187,7 +187,7 @@ $(document).ready(function () {
 
   //маска для номера телефона
   $('[type=tel]').mask('+7(000) 000-00-00', {
-    placeholder: "+7(___) ___-__-__"
+    placeholder: "Ваш номер телефона:"
   });
 
 
@@ -257,7 +257,7 @@ $(document).ready(function () {
 
   //маска для номера телефона
   $('[type=tel]').mask('+7(000) 000-00-00', {
-    placeholder: "+7(___) ___-__-__"
+    placeholder: "Ваш номер телефона:"
   });
 
 
@@ -279,7 +279,7 @@ $(document).ready(function () {
       duration: 500,
       easing: "swing"
     });
-    return false;
+    return false;     
   });
 
 

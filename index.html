@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Турецкий ремонт</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/animate.css">
@@ -562,10 +563,12 @@
             <div class="footer__wrap-map">
               <h3 class="footer__title-map">
                 Пермь, торгово-развлекательный центр Столица
-                Прямой телефон +7 (999) 763 33 99
+                Прямой телефон 
+                <a href="#" class="phone footer__contacts-phone wow fadeInLeft">+7 (999) 768-32-99</a>
               </h3>
               <div class="footer__map-icon">
-                <img src="img/icon-map.svg" alt="logo">
+                <a href="#"><img src="img/mail.svg" alt="logo-mail"></a>
+                <a href="#"><img src="img/ins.svg" alt="logo-ins"></a>
               </div>
 
               <div class="ymaps-2-1-76-map"></div>
@@ -593,7 +596,8 @@
           </div>
         </div>
         <!-- /.menu -->
-        <div class="btn-up"><a href="#top" class="button__up">наверх</a></div>
+        <a href="#top" class="button__up">наверх</a>
+        <!-- <div class="btn-up"><a href="#top" class="button__up">наверх</a></div> -->
       </div>
       <!-- /.container -->      
     </div>
@@ -671,12 +675,12 @@
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
 
-
+<!-- [57.977679, 56.189179] -->
   <script>
     function createMap() {
       var myMap = new ymaps.Map('map', {
-        center: [57.977679, 56.189179],
-        zoom: 9
+        center: [57.97739622855371, 56.18835789748374],
+        zoom: 12
       }, {
         searchControlProvider: 'yandex#search'
       }),
